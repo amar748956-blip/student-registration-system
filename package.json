@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "DB_DRIVER=sqlite php -S 0.0.0.0:3000 -t student-registration student-registration/router.php",
     "build": "next build",
     "start": "next start",
     "lint": "eslint ."
